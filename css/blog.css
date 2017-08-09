@@ -1,0 +1,118 @@
+.card {
+    background: transparent !important;
+    box-shadow: none !important;
+    height: auto !important;
+}
+
+.card .card-content .entry-footer {
+    margin-top: 10px !important;
+}
+
+.card-content {
+    padding: 20px 20px 20px 0 !important;
+}
+h3 a {
+    color: #444;
+}
+small {
+    font-size: 12px !important;
+}
+
+small a{
+    color: #777 !important;
+    font-weight: 400 !important;
+}
+
+.nav-previous a, .nav-next a {
+    background: #fafafa;
+    padding: 1em 2em;
+    border-radius: 2px;
+    border: 1px solid #fefefe;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05)
+}
+.nav-previous a:hover, .nav-next a:hover {
+    background: #fbfbfb;
+    border: 1px solid #fff;
+    color: #fff !important;
+}
+
+.nav-previous a:before {
+    content: "\f100";
+    font-size: 12px;
+    position: relative;
+    right: 2px;
+    color: #3273dc;
+}
+.nav-next a:after {
+    content: "\f101";
+    font-size: 12px;
+    position: relative;
+    left: 2px;
+    color: #3273dc;
+}
+
+.searchform h2 {
+    display: none;
+}
+
+.widget-area .column, .widget-area a {
+    padding-top: 0 !important;
+    color: #444 !important;
+}
+
+input[type="text"] {
+    border: 1px solid #31B5C3;
+    background: #fafafa;
+    box-shadow: none;
+    height: 45px;
+    padding: 0 .8em;
+}
+input[type="text"]:hover, input[type="text"]:focus {
+    border: 1px solid #31B5C3;
+}
+#searchsubmit {
+    height: 45px;
+    width: 45px;
+    border: 1px solid #31B5C3;
+    border-radius: 0;
+    color: #fff;
+    background: #31b5c3;
+}
+
+.widget-title {
+    text-transform: uppercase;
+    border-bottom: 1px solid #999;
+    padding: .5em 0;
+    color: #444 !important;
+}
+
+.tagcloud a {
+    font-size: 13px !important;
+    background: #eee;
+    padding: .6em .8em !important;
+    border-radius: 2px;
+}
+.tagcloud a:before {
+    content: "\f02b";
+    font-size: 10px;
+    padding-right: .5em;
+}
+
+.recentcomments .comment-author-link:before {
+    content: "\f0e6";
+    padding-right: .5em;
+}
+
+.widget_categories li, .widget_recent_entries li {
+    padding: .5em;
+    border-bottom: 1px solid #eee !important;
+}
+.widget_categories li:hover, .widget_recent_entries li:hover {
+    border-bottom: 1px solid #eee !important;
+}
+.widget_categories li a:before, .widget_recent_entries li a:before {
+    content: "\f101";
+    font-size: 10px;
+    position: relative;
+    bottom: 1px; right: 2px;
+}
