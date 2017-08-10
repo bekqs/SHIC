@@ -1,7 +1,7 @@
 /*
 Theme Name: SHIC
 Theme URI: http://highimpactstudents.org
-Author: Scops
+Author: Beka
 Author URI: http://bekqs.com
 Description: Wordpress theme for SHIC, built on top of Bulmapress
 Version: 2.0
@@ -17,6 +17,11 @@ Bulmapress Sass: /frontend/bulmapress/sass/
 */
 
 html, body { height:100%; }
+
+body { padding-top: 70px; }
+@media screen and (min-width: 768px) {
+    body { padding-top: 100px; }
+}
 #page { min-height:100%; position:relative; }
 body,
 button,
@@ -37,7 +42,7 @@ a { border: none !important; -webkit-transition: all .1s ease-in-out !important;
 -moz-transition: all .1s ease-in-out !important;
 transition: all .1s ease-in-out !important;}
 a:hover:not(.button) { color: #2F70A7 !important; border: none !important; }
-.content-area:not(.landing) { margin-top: 100px; }
+
 hr { 
     border-top: 1px solid #ededed !important;
     border-bottom: 1px solid #fefefe !important; 
@@ -84,6 +89,8 @@ html #shiftnav-toggle-main~#wpadminbar { top: 0 !important}
     transform: translateY(-50%);
 }
 
+/* ------- begin harysh edit --------- */
+/*
 .logo-big {
     background: url(images/logo-big.gif) no-repeat;
     background-size: contain;
@@ -102,12 +109,33 @@ html #shiftnav-toggle-main~#wpadminbar { top: 0 !important}
         background-position: left center;
     }
 }
+*/
+
+.logo-big {
+    background: url(/wp-content/uploads/2017/08/SHIC-logo-white.jpeg) no-repeat;
+    background-size: contain;
+    background-position: left center;
+}
+.logo-small {
+    background: url(/wp-content/uploads/2017/08/SHIC-logo-white.jpeg) no-repeat;
+    background-size: contain;
+    background-position: left center;
+}
+
+@media screen and (max-width: 460px) {
+    .logo-big {
+        background: url(/wp-content/uploads/2017/08/SHIC-logo-white.jpeg) no-repeat;
+        background-size: contain;
+        background-position: left center;
+    }
+}
+/* ----------- end harysh edit ------------ */
 
 /* METASLIDER */
 .header-slider img {
   display: block;
-  width: 100vw !important;
-  height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
   object-fit: cover;
   background-size: cover;
   z-index: -999;
@@ -394,7 +422,7 @@ a.button.is-dark:hover::before { background: rgba(0, 0, 0, .05) !important; }
     border-bottom: 1px solid transparent !important;
 }
 
-.button.is-primary { background-color: #3CB878 !important; }
+.button.is-primary { background-color: #089EC1 !important; }
 .button.is-info { background-color: #2F70A7 !important; }
 .button.button.is-dark { background-color: #6D6E71 !important; }
 
@@ -414,12 +442,9 @@ a.button.is-dark:before {
 }
 a.button.is-primary:before { content: "\f0f6"; }
 a.button.button.is-info:before { content: "\f0ed"; }
-a.button.button.is-dark:before { content: "\f019"; }
+a.button.button.is-dark:before { content: "\f019"; padding: .85em .8em !important; }
 
-a.button a.is-dark:before {
-    padding: .89em .8em !important;
-    right: 13px !important;
-}
+
 
 /* SHIFTNAV */
 .shiftnav.shiftnav-skin-standard-dark ul.shiftnav-menu li.menu-item > .shiftnav-target { text-shadow: none !important; }
@@ -432,6 +457,7 @@ a.button a.is-dark:before {
 @media screen and (max-width: 600px) {
     #shiftnav-toggle-main.shiftnav-toggle-style-burger_only .shiftnav-toggle-burger { 
         top: 60px !important;
+	transform: translateY(-60%);
     }
 }
 #shiftnav-toggle-main.shiftnav-toggle-style-burger_only .shiftnav-toggle-burger.burger-scroll { 
@@ -440,7 +466,16 @@ a.button a.is-dark:before {
 }
 @media screen and (max-width: 600px) {
     #shiftnav-toggle-main.shiftnav-toggle-style-burger_only .shiftnav-toggle-burger.burger-scroll { 
-        position: relative !important; 
+        position: relative!important; 
         top: 50px !important;
+	transform: translateY(-68%);
     }
+}
+
+#searchform {
+	margin-top: 22px;
+}
+
+.elementor-button-link:hover .elementor-button-text {
+	color: white;
 }
