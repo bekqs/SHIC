@@ -404,7 +404,8 @@ footer {
 .ribbon-label:after { right: 0; }
 
 /* BUTTONS */
-a.button {
+a.button,
+.elementor-button {
     font-family: 'Fontawesome', 'Segoe ui', sans-serif;
     font-size: 13px !important;
     margin: .2em .1em;
