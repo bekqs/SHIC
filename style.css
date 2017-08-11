@@ -268,10 +268,9 @@ a.flex-next:active { background-image: url(images/arrow-right-active.png) !impor
 .go-top > i { position: relative; top: 3px; left: 1px; font-size: 12px !important;}
 
 /* FOOTER */
-footer {
+.footer {
 	margin-top: 3em;
 }
-
 .site-info {
     background: #d9e8ee !important;
     border-top: 1px solid #e3f3f9;
@@ -404,11 +403,10 @@ footer {
 .ribbon-label:after { right: 0; }
 
 /* BUTTONS */
-a.button,
-.elementor-button {
+a.button {
     font-family: 'Fontawesome', 'Segoe ui', sans-serif;
     font-size: 13px !important;
-    margin: .2em .1em;
+    margin: .1em .2em;
     padding: 1.5em 1em !important;
     box-shadow: 0 0px 2px rgba(0, 0, 0, .1) !important;
     border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
@@ -416,6 +414,10 @@ a.button,
     -webkit-transition: all ease-in-out .2s;
     -moz-transition: all ease-in-out .2s;
     transition: all ease-in-out .2s;
+}
+.elementor-button {
+	padding: .6em .8em;
+	font-size: 13px !important;
 }
 .button:hover { opacity: .95; }
 a.button.is-primary:hover::before,
@@ -427,7 +429,7 @@ a.button.is-dark:hover::before { background: rgba(0, 0, 0, .05) !important; }
     border-bottom: 1px solid transparent !important;
 }
 
-.button.is-primary { background-color: #089EC1 !important; }
+.button.is-primary, .elementor-button { background-color: #089EC1 !important; color: #fff !important; }
 .button.is-info { background-color: #2F70A7 !important; }
 .button.button.is-dark { background-color: #6D6E71 !important; }
 
